@@ -6,6 +6,8 @@ Cover: https://gazoche.xyz/images/linux_fps_overlays/cover.png
 
 On Linux, if you want to display a FPS counter in your application, there are several ways to do so, but they depend on your hardware and the underlying 3D API being used (Vulkan or OpenGL). This short article will guide you through the different options available.
 
+**UPDATE:** **since the last revision of this article, a new FPS overlay was released for Linux. It's called [MangoHUD](https://github.com/flightlessmango/MangoHud), and is better than all the options presented below in pretty much every way. It supports both Vulkan and OpenGL on any platform, is very configurable, can show other useful information like GPU temperature, and even record metrics for benchmarking. There's really no point in using anything else on Linux at the moment. (which makes this whole article pretty much irrelevant).**
+
 # Available options
 
 <style type="text/css">
