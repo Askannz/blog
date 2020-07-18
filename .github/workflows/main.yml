@@ -9,7 +9,18 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
+
     - uses: actions/checkout@v2
+      with:
+        submodules: true
+
     - run: sudo apt-get update && sudo apt-get -y install pelican
     - run: cd $GITHUB_WORKSPACE && pelican content/
-    - run: ls .
+
+    - uses: Pendect/action-rsyncer@v1.1.0
+      env:
+        DEPLOY_KEY: ${{secrets.DEPLOY_KEY}}
+      with:
+        flags: '-vzr --delete'
+        src: 'output/'
+        dest: github@104.248.14.6:/var/www/gazoche.xyz/html/
