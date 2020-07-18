@@ -20,10 +20,12 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = [('Pelican', 'http://getpelican.com/'),
-         ('Theme: medius', 'https://github.com/onur/medius'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/')]
+LINKS = [
+    ('Pelican', 'http://getpelican.com/'),
+    ('Theme: medius', 'https://github.com/onur/medius'),
+    ('Python.org', 'http://python.org/'),
+    ('Jinja2', 'http://jinja.pocoo.org/')
+]
 
 # Social widget
 SOCIAL = []
@@ -33,11 +35,11 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = "../../Prog/Sources/medius"
+THEME = "theme/medius"
 MEDIUS_AUTHORS = {
     'Gazoche': {
         'image': 'https://gazoche.xyz/images/avatar.png',
-        'description': "I write stuff on the interwebs. Sometimes.",
+        'description': "A random dude",
         'links': [('github', 'https://github.com/Askannz')]
     }
 }
