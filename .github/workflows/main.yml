@@ -14,7 +14,7 @@ jobs:
       with:
         submodules: true
 
-    - run: sudo apt-get update && sudo apt-get -y install pelican
+    - run: sudo pip3 install pelican[Markdown]
     - run: cd $GITHUB_WORKSPACE && pelican content/
 
     - uses: Pendect/action-rsyncer@v1.1.0
