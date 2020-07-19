@@ -21,6 +21,7 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = [
+    ('Source (GitHub)', 'https://github.com/Askannz/blog'),
     ('Pelican', 'http://getpelican.com/'),
     ('Theme: medius', 'https://github.com/onur/medius'),
     ('Python.org', 'http://python.org/'),
